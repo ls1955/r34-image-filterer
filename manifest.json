@@ -5,5 +5,13 @@
     "version": "1.0.0",
     "icons": {
         "16": "images/icon-16.png"
-    }
+    },
+    "content_scripts": [
+        {
+            "js": ["scripts/filter.js"],
+            "matches": [
+                "https://rule34.xxx/*"
+            ]
+        }
+    ]
 }
