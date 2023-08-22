@@ -1,5 +1,5 @@
 {
-    "mainfest_version": 3,
+    "manifest_version": 3,
     "name": "R34 filter",
     "description": "Filter posts via given blacklist",
     "version": "1.0.0",
