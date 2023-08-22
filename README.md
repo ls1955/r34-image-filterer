@@ -9,7 +9,7 @@ it will hide all the images that are inside the blacklist
 4. In top left corner, click `load unpacked` and select the folder that contain this repo.
 
 # Include tags
-Inside filter.js, simply include tags inside the blacklist
+Inside scripts/filter.js, simply include tags inside the blacklist
 
 # TODO
 * Support regexp?
