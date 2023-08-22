@@ -3,9 +3,6 @@
     "name": "R34 filter",
     "description": "Filter posts via given blacklist",
     "version": "1.0.0",
-    "background": {
-        "service_worker": "background.js"
-    },
     "icons": {
         "16": "images/icon-16.png"
     }
