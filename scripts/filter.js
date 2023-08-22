@@ -8,7 +8,7 @@ const posts = imageList?.querySelectorAll("span");
 const unwantedPosts = [];
 
 posts?.forEach(post => {
-    if (isInBlackList(post) == true) unwantedPosts.push(post);
+    if (isInBlackList(post)) unwantedPosts.push(post);
 });
 
 unwantedPosts.forEach(post => post.style.display = "None");
