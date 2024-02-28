@@ -23,5 +23,4 @@ Include them inside `blacklist-tags.json`.
   of regexp and attempt to match the tags one by one sounds costly, no?
 * Include hotkey to toggle activation. As current extension is basically
   just a content script, it is not design to be toggle around AFAAK (As Far As Author Know).
-* Get a real icon. Current icon is just a pile of green. Not an icon.
 * Manage tags with a dialog. Sounds fun. Might work on it on the future.
