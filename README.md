@@ -21,5 +21,3 @@ Include them inside `blacklist-tags.json`.
   Well... though its definitely fun to actually have some real life application
   with regexp, and its relatively easy to support it... Include an array
   of regexp and attempt to match the tags one by one sounds costly, no?
-* Include hotkey to toggle activation. As current extension is basically
-  just a content script, it is not design to be toggle around AFAAK (As Far As Author Know).
