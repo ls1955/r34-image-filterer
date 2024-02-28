@@ -1,5 +1,5 @@
 # Description
-A chrome extension that hide images according to given blacklist in certain website.
+A chrome extension that hide blacklisted images in *that* website.
 
 # Getting started
 1. Fork/clone this repo.
