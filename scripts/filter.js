@@ -9,7 +9,7 @@ async function main() {
   const whitelistPosts = [];
 
   posts?.forEach((post) => {
-    if (!isInBlackList(post, blacklist)) {
+    if (isInWhitelist(post, blacklist)) {
       whitelistPosts.push(post);
     }
   });
@@ -23,11 +23,11 @@ async function getBlacklistTags() {
   return await fetch(blacklistTagsURL).then((res) => res.json());
 }
 
-function isInBlackList(post, blacklist) {
-  // It is observed that alt and title attribute contain tags
-  let tags = post.querySelector("img").alt.trim().split(" ");
+function isInWhitelist(post, blacklist) {
+  // `alt` attribute in `img` contains the tags
+  let tags = new Set(post.querySelector("img").alt.trim().split(" "));
 
-  return tags.some((tag) => blacklist.has(tag));
+  return tags.isDisjointFrom(blacklist);
 }
 
 main();
