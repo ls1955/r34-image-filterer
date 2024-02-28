@@ -6,15 +6,12 @@ async function main() {
   const posts = imageList?.querySelectorAll("span");
 
   // Hide all posts initially to avoid the blinking of blacked listed posts before it is hidden.
-  const whitelistPosts = [];
-
+  // Posts are hidden initially with `hide-posts.css`.
   posts?.forEach((post) => {
     if (isInWhitelist(post, blacklist)) {
-      whitelistPosts.push(post);
+      post.style.display = "inline-block";
     }
   });
-
-  whitelistPosts.forEach((post) => (post.style.display = "inline-block"));
 }
 
 async function getBlacklistTags() {
@@ -24,7 +21,7 @@ async function getBlacklistTags() {
 }
 
 function isInWhitelist(post, blacklist) {
-  // `alt` attribute in `img` contains the tags
+  // `alt` attribute in `img` contains the tags.
   let tags = new Set(post.querySelector("img").alt.trim().split(" "));
 
   return tags.isDisjointFrom(blacklist);
