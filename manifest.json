@@ -1,17 +1,21 @@
 {
-    "manifest_version": 3,
-    "name": "R34 filter",
-    "description": "Filter posts via given blacklist",
-    "version": "1.0.0",
-    "icons": {
-        "16": "images/icon-16.png"
-    },
-    "content_scripts": [
-        {
-            "js": ["scripts/filter.js"],
-            "matches": [
-                "https://rule34.xxx/*"
-            ]
-        }
-    ]
+  "manifest_version": 3,
+  "name": "R34 filter",
+  "description": "Filter posts via given blacklist",
+  "version": "1.0.0",
+  "icons": {
+    "16": "images/icon-16.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/filter.js"],
+      "matches": ["https://rule34.xxx/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["blacklist-tags.json"],
+      "matches": ["https://rule34.xxx/*"]
+    }
+  ]
 }
