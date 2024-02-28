@@ -15,9 +15,3 @@ Include them inside `blacklist-tags.json`.
 * Existed blacklist feature in that website wasn't working for author, for some reason.
 * Unlimited amount of blacklist tags (if you have more than 2500 characters of tags, that is...).
 * Once activated, it will hide all blacklisted images automatically inside certain website until it is deactivated/removed.
-
-# Improvements?
-* Support regexp.
-  Well... though its definitely fun to actually have some real life application
-  with regexp, and its relatively easy to support it... Include an array
-  of regexp and attempt to match the tags one by one sounds costly, no?
