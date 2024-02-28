@@ -4,13 +4,17 @@ async function main() {
 
   const imageList = document.querySelector(".image-list");
   const posts = imageList?.querySelectorAll("span");
-  const unwantedPosts = [];
+
+  // Hide all posts initially to avoid the blinking of blacked listed posts before it is hidden.
+  const whitelistPosts = [];
 
   posts?.forEach((post) => {
-    if (isInBlackList(post, blacklist)) unwantedPosts.push(post);
+    if (!isInBlackList(post, blacklist)) {
+      whitelistPosts.push(post);
+    }
   });
 
-  unwantedPosts.forEach((post) => (post.style.display = "None"));
+  whitelistPosts.forEach((post) => (post.style.display = "inline-block"));
 }
 
 async function getBlacklistTags() {

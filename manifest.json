@@ -9,6 +9,7 @@
   "content_scripts": [
     {
       "js": ["scripts/filter.js"],
+      "css": ["hide-posts.css"],
       "matches": ["https://rule34.xxx/*"]
     }
   ],

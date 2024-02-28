@@ -17,10 +17,6 @@ Include them inside `blacklist-tags.json`.
 * Once activated, it will hide all blacklisted images automatically inside certain website until it is deactivated/removed.
 
 # Improvements?
-* Improve user experience.
-  Currently it hide all images that are blacklisted, as such there might be a flash
-  of those images when loading the page. One of the workaround might be hiding all
-  the images by default, then only showing non-blacklisted image.
 * Support regexp.
   Well... though its definitely fun to actually have some real life application
   with regexp, and its relatively easy to support it... Include an array
