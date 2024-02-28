@@ -6,6 +6,7 @@ A chrome extension that hide images according to given blacklist in certain webs
 2. [Turn on Extension developer mode](https://developer.chrome.com/docs/extensions/mv3/faq/#faq-dev-01).
 3. In chrome, go to `chrome://extensions`.
 4. In top left corner, click `load unpacked` and select the folder that contain this repo.
+5. Go to *that* website, try searching for posts including tags inside `blacklist-tags.json` to ensure the extension is working.
 
 # Include own tags
 Include them inside `blacklist-tags.json`.
